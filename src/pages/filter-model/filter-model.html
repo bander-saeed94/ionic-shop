@@ -1,0 +1,33 @@
+<!--
+  Generated template for the FilterModelPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Filter Model</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="closePage()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Female</ion-label>
+      <ion-toggle [(ngModel)]="femaleSelected"></ion-toggle>
+    </ion-item>
+    <ion-item>
+        <ion-label>Male</ion-label>
+        <ion-toggle [(ngModel)]="maleSelected"></ion-toggle>
+      </ion-item>
+  </ion-list>
+</ion-content>
